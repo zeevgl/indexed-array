@@ -7,6 +7,7 @@ function IndexedArray(arrayData){
   var indexes={};
   
   function indexArray(indexName){
+    indexes[indexName]={};
     for(var i=0;i<arrayData.length;i++){
       //arrayData[i]
     }
@@ -17,7 +18,8 @@ function IndexedArray(arrayData){
   //                              PUBLIC:
   //--------------------------------------------------------------
   
-  this.addIndex = function(indexName, indexValue){
+  this.addIndex = function(indexName, indexKey){
+    indexes[indexName]=indexKey;
     indexArray(indexName);
   };
   

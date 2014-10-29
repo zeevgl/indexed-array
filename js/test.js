@@ -27,6 +27,26 @@ var data=[
   
 ];
 
+var indexed={
+  ID:{
+    1:[0],
+    2:[1],
+    3:[3],
+    4:[4],
+  },
+  SCORE:{
+    key:"score",
+    data:{
+      80:[0],
+      100:[1],
+      70:[3],
+      90:[4],
+    },
+    sorted:[3,0,4,1]
+  }
+};
+
 
 var ia = new IndexedArray(data);
 ia.addIndex("ID", "id");
+ia.addIndex("SCORE", "score");
